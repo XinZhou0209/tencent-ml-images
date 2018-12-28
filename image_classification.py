@@ -64,6 +64,8 @@ logit = net.logit
 prob = tf.nn.softmax(logit)
 prob_topk, pred_topk = tf.nn.top_k(prob, k=FLAGS.top_k_pred)
 
+
+
 # restore model
 config = tf.ConfigProto()
 config.gpu_options.allow_growth = True
@@ -72,6 +74,9 @@ config.log_device_placement=False
 sess = tf.Session(config=config)
 saver = tf.train.Saver(tf.global_variables())
 saver.restore(sess, FLAGS.model_dir)
+
+init_op = tf.group(tf.global_variables_initializer(), tf.local_variables_initializer())
+sess.run(init_op)
 
 dictionary = _load_dictionary(FLAGS.dictionary)
 
