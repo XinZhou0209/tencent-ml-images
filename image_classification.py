@@ -72,11 +72,14 @@ config.gpu_options.allow_growth = True
 config.gpu_options.visible_device_list = str(FLAGS.visiable_gpu)
 config.log_device_placement=False
 sess = tf.Session(config=config)
+sess.run(tf.local_variables_initializer())
+
+sess.run(tf.global_variables_initializer())
+
 saver = tf.train.Saver(tf.global_variables())
 saver.restore(sess, FLAGS.model_dir)
 
-init_op = tf.group(tf.global_variables_initializer(), tf.local_variables_initializer())
-sess.run(init_op)
+
 
 dictionary = _load_dictionary(FLAGS.dictionary)
 
