@@ -14,7 +14,7 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="image_classification.sh" pinned="false" current-in-tab="false">
+      <file leaf-file-name="image_classification.sh" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/example/image_classification.sh">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="85">
@@ -34,7 +34,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="image_classification.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="image_classification.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/image_classification.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="425">
@@ -827,14 +827,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/example/image_classification.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/image_classification.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
@@ -842,6 +834,14 @@
           <folding>
             <element signature="e#786#824#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/example/image_classification.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
